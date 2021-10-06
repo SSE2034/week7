@@ -90,6 +90,46 @@ int main (int argc, char *argv[])
 
         cout << "A == B : " << (A==B) << endl;
         cout << "A != B : " << (A!=B) << endl;
+        cout << "A > B : " << (A>B) << endl;
+        cout << "A < B : " << (A<B) << endl;
+        cout << "A >= B : " << (A>=B) << endl;
+        cout << "A <= B : " << (A <=B) << endl;
+
+        vector<int> data;
+
+        for (size_t i=0; i<row_a; i++) {
+            for (size_t j=0; j<row_b; j++) {
+                data.push_back(0);
+            }
+        }
+
+        cout << "Initialize A to all zero : ";
+        A = data;
+        cout << A.to_string() << endl;
+
+        cout << "A += B -> A : ";
+        A += B;
+        cout << A.to_string() << endl;
+
+        cout << "A *= B -> A : ";
+        A *= B;
+        cout << A.to_string() << endl;
+
+        cout << " A -= B -> A : ";
+        A -= B;
+        cout << A.to_string() << endl;
+
+        cout << "B *= 0 -> B : ";
+        B *= 0;
+        cout << B.to_string() << endl;
+
+        cout << "B += 1 -> B : ";
+        B += 1;
+        cout << B.to_string() << endl;
+
+        cout << "B -= 1 -> B : ";
+        B -= 1;
+        cout << B.to_string() << endl;
 
         cout << "------------------------------------------------------------------------------------------\n" << endl; 
     }

@@ -100,7 +100,7 @@ String String::operator <<(size_t rhs) {
 
 String String::operator >>(size_t rhs) {
     //TODO : Rotational Shifht Right as rhs
-    //Ex) "ABCD" << 1 = "DABC"
+    //Ex) "ABCD" >> 1 = "DABC"
 }
 
 bool String::operator ==(String rhs) {
