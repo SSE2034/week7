@@ -1,5 +1,4 @@
 #include "matrix.h"
-#include <cassert>
 
 MATRIX::MATRIX(void)
 {
@@ -10,8 +9,6 @@ MATRIX::MATRIX(void)
 
 MATRIX::MATRIX(size_t row_size, size_t col_size)
 {
-    assert((row_size != 0) && (col_size != 0));
-
     n_row = row_size;
     n_col = col_size;
 
@@ -20,8 +17,6 @@ MATRIX::MATRIX(size_t row_size, size_t col_size)
 
 MATRIX::MATRIX(std::vector<int> data, size_t row_size, size_t col_size)
 {
-    assert((row_size != 0) && (col_size != 0));
-
     size_t array_size = data.size();
 
     assert (array_size == (row_size * col_size));
