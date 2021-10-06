@@ -24,11 +24,13 @@ long long Time::get_total_second() {
 }
 
 //Convert total seconds -> Time Class
-Time second_to_time(long long s)
+Time second_to_time(long long sec)
 {
     long long abs;
+    unsigned h, m, s;
 
-    if (s < 0) abs = -s;
+    if (sec < 0) abs = -1 * sec;
+    else abs = sec;
 
     s = abs % 60;
     abs = abs / 60;
@@ -36,7 +38,7 @@ Time second_to_time(long long s)
     m = abs % 60;
     h = abs / 60;
 
-    Time result = Time(h, m, s, (s < 0));
+    Time result = Time(h, m, s, (sec < 0));
 
     return result;
 }
@@ -86,12 +88,16 @@ bool Time::operator <= (Time rhs) {
     //TODO : if (lsh <= rhs) return true; else return false;
 }
 
-Time operator -(Time lhs, unsigned rhs)
+Time Time::operator + (long long rhs) {
+    //TODO : return Time lhs + rhs[second]
+}
+
+Time operator -(Time lhs, long long rhs)
 {
     //TODO : return lhs - rhs[s]
 }
 
-Time operator -(unsigned lhs, Time lhs)
+Time operator -(long long lhs, Time rhs)
 {
     //TODO : return rhs[s] - lhs
 }

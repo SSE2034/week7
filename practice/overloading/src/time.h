@@ -22,9 +22,11 @@ class Time {
     bool operator >= (Time rhs);
     bool operator <= (Time rhs);
 
-    friend Time operator - (Time lhs, unsigned rhs);
-    friend Time operator - (unsigned lhs, Time lhs);
+    Time operator + (long long rhs);
+
+    friend Time operator - (Time lhs, long long rhs);
+    friend Time operator - (long long lhs, Time rhs);
     
 };
 
-Time second_to_time(long long s);
+Time second_to_time(long long sec);

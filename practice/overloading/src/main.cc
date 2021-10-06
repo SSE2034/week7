@@ -35,4 +35,13 @@ int main(int argc, char *argv[])
     std::cout << "t1 >= t2 : " << (t1 >= t2) << std::endl;
     std::cout << "t1 <= t2 : " << (t1 <= t2) << std::endl;
 
+    std::cout << "t1 + 100 : ";
+    (t1 + 100).print();
+
+    std::cout << "t1 - 100 : ";
+    (t1 - 100).print();
+
+    std::cout << "100 - t1 : ";
+    (100 - t1).print();
+
 }
