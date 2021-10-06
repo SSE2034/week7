@@ -1,4 +1,5 @@
 all:
+	rm -f obj/*
 	make -f MakefileDS
 	rm -f obj/*
 	make -f MakefileDF
