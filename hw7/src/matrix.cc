@@ -19,8 +19,6 @@ MATRIX::MATRIX(std::vector<int> data, size_t row_size, size_t col_size)
 {
     size_t array_size = data.size();
 
-    assert (array_size == (row_size * col_size));
-
     n_row = row_size;
     n_col = col_size;
 
