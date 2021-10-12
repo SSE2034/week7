@@ -104,7 +104,7 @@ int main (int argc, char *argv[])
         }
 
         cout << "Initialize A to all zero : ";
-        A = data;
+        A.at(":,:", data);
         cout << A.to_string() << endl;
 
         cout << "A += B -> A : ";
