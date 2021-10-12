@@ -73,7 +73,7 @@ int main (int argc, char *argv[])
         cout << "B : " << B.to_string() << endl;
 
         cout << "A.at(0, 0) : " << A.at(0, 0) << endl;
-        cout << "B.at (:, 1) : " << B.at(":, 1").to_string() << endl;
+        cout << "B.at (:, 1) : " << B.at(":,1").to_string() << endl;
         cout << "A[0,0] : " << A["0,0"].to_string() << endl;
         cout << "B[:,1] : " << B[":,1"].to_string() << endl;
         cout << "A[0:2, 0] : " << A["0:2,0"].to_string() << endl;
